@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Vehicle
 {
-    internal class VehicleContext
+    public class VehicleContext
     {
+        public VehicleContext(bool isPurchase)
+        {
+            IsPurchase = isPurchase;
+        }
+
+        public bool IsPurchase { get; set; }
+
     }
 }
