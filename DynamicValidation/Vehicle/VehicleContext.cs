@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vehicle
 {
-    internal class ValidationContext
+    internal class VehicleContext
     {
     }
 }
