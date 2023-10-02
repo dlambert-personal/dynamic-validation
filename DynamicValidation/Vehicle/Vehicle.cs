@@ -6,16 +6,26 @@ namespace Vehicle
 {
     public class Vehicle
     {
-        public string Make { get; set; }
-        public string Model { get; set; }
-        public string VIN { get; set; }
+        public string? Make { get; set; }
+        public string? Model { get; set; }
+        public string? VIN { get; set; }
     }
 
     public class SearchVehicleValidator:AbstractValidator<Vehicle>
     {
         public SearchVehicleValidator()
         {
+            RuleFor(v => v.Make).NotNull()
+              .When(v => string.IsNullOrEmpty(v.Model) && string.IsNullOrEmpty(v.VIN))
+              .WithMessage("At least one search criteria is required(1)");
 
+            RuleFor(v => v.Model).NotNull()
+              .When(v => v.Model != null)
+              .WithMessage("At least one search criteria is required(2)");
+
+            RuleFor(v => v.VIN).NotNull()
+              .When(v => v.Make != null && v.Model != null)
+              .WithMessage("At least one search criteria is required(3)");
         }
     }
     public class ListingVehicleValidator : AbstractValidator<Vehicle>
