@@ -11,11 +11,20 @@ namespace Vehicle
         public string VIN { get; set; }
     }
 
-    public class VehicleValidator:AbstractValidator<Vehicle>
+    public class SearchVehicleValidator:AbstractValidator<Vehicle>
     {
-        public VehicleValidator()
+        public SearchVehicleValidator()
+        {
+
+        }
+    }
+    public class ListingVehicleValidator : AbstractValidator<Vehicle>
+    {
+        public ListingVehicleValidator()
         {
             RuleFor(vehicle => vehicle.Make).NotNull();
+            RuleFor(vehicle => vehicle.Model).NotNull();
+            RuleFor(vehicle => vehicle.VIN).NotNull();
         }
     }
 }
