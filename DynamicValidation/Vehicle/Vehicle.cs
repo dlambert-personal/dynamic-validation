@@ -44,13 +44,17 @@ namespace Vehicle
         }
     }
 
-    public class PurchaseVehicleValidator : AbstractValidator<Vehicle>
+    public class PurchaseVehicleValidator : AbstractValidator<VehiclePurchase>
     {
-        public PurchaseVehicleValidator()
+        VehicleContext cx;
+        public PurchaseVehicleValidator(VehicleContext cx)
         {
+            this.cx = cx;
             RuleFor(vehicle => vehicle.Make).NotNull();
             RuleFor(vehicle => vehicle.Model).NotNull();
             RuleFor(vehicle => vehicle.VIN).NotNull();
+            // dynamic rules
+            RuleFor(vehicle => vehicle.CreditApproved).Must(c => c == true).WithSeverity(Severity.Warning);
         }
     }
 }

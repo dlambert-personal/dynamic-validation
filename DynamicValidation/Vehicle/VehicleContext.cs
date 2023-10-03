@@ -8,12 +8,7 @@ namespace Vehicle
 {
     public class VehicleContext
     {
-        public VehicleContext(bool isPurchase)
-        {
-            IsPurchase = isPurchase;
-        }
-
         public bool IsPurchase { get; set; }
-
+        public FluentValidation.Severity CreditApprovedSeverity { get; set; }
     }
 }
