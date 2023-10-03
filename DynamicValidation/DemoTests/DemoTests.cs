@@ -65,6 +65,20 @@ namespace DemoTests
             Assert.IsTrue(result.IsValid);  // expect one field to be non-null
         }
 
+        /// <summary>
+        /// Test using fluent validation - see accomanying article.
+        /// </summary>
+        [TestMethod]
+        public void TestWithTwoValidatorTypes()
+        {
+            var v = new Vehicle.Vehicle() { Make = "Yugo"};
+            var svalidator = new SearchVehicleValidator();
+            var result = svalidator.Validate(v);
+            Assert.IsTrue(result.IsValid);  // one non-null field here is sufficient to be valid 
 
+            var lvalidator = new ListingVehicleValidator();
+            result = lvalidator.Validate(v);
+            Assert.IsFalse(result.IsValid);  // all fields must now be valid
+        }
     }
 }

@@ -11,6 +11,12 @@ namespace Vehicle
         public string? VIN { get; set; }
     }
 
+    public class VehiclePurchase: Vehicle
+    {
+        public decimal? PurchasePrice { get; set; }
+        public bool? CreditApproved { get; set; }
+    }
+
     public class SearchVehicleValidator:AbstractValidator<Vehicle>
     {
         public SearchVehicleValidator()
@@ -31,6 +37,16 @@ namespace Vehicle
     public class ListingVehicleValidator : AbstractValidator<Vehicle>
     {
         public ListingVehicleValidator()
+        {
+            RuleFor(vehicle => vehicle.Make).NotNull();
+            RuleFor(vehicle => vehicle.Model).NotNull();
+            RuleFor(vehicle => vehicle.VIN).NotNull();
+        }
+    }
+
+    public class PurchaseVehicleValidator : AbstractValidator<Vehicle>
+    {
+        public PurchaseVehicleValidator()
         {
             RuleFor(vehicle => vehicle.Make).NotNull();
             RuleFor(vehicle => vehicle.Model).NotNull();
