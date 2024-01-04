@@ -1,7 +1,8 @@
 repo_name: dlambert-personal/dynamic-validation
 report_id: 8da534f5abee9e3f1b3c1689120ba241
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-09T18:09:37+00:00'
+timestamp: '2024-01-04T15:06:02+00:00'
 requested_by: dlambert-personal
 provider: github
 branch: main
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/dlambert-personal/dynamic-validation
   detection_source: Repo Metadata
 - name: ".NET"
   description: A free, cross-platform, open source developer platform for building
@@ -27,7 +29,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
-  detection_source: DynamicValidation/Vehicle/Vehicle.csproj
+  detection_source_url: https://github.com/dlambert-personal/dynamic-validation/blob/main/DynamicValidation/DemoTests/DemoTests.csproj
+  detection_source: DynamicValidation/DemoTests/DemoTests.csproj
   last_updated_by: David Lambert
   last_updated_on: 2023-09-29 18:05:28.000000000 Z
 - name: ".NET Core"
@@ -41,8 +44,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/6403/default_91fc1f0ee315262794273aa1387eaf8fed8436e6.png
-  detection_source_url: DynamicValidation/DemoTests/DemoTests.csproj
-  detection_source: DynamicValidation/Vehicle/Vehicle.csproj
+  detection_source_url: https://github.com/dlambert-personal/dynamic-validation/blob/main/DynamicValidation/DemoTests/DemoTests.csproj
+  detection_source: DynamicValidation/DemoTests/DemoTests.csproj
   last_updated_by: David Lambert
   last_updated_on: 2023-09-29 18:05:28.000000000 Z
 - name: ASP.NET Core
@@ -56,8 +59,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/11331/asp.net-core.png
-  detection_source_url: DynamicValidation/DemoTests/DemoTests.csproj
-  detection_source: DynamicValidation/Vehicle/Vehicle.csproj
+  detection_source_url: https://github.com/dlambert-personal/dynamic-validation/blob/main/DynamicValidation/DemoTests/DemoTests.csproj
+  detection_source: DynamicValidation/DemoTests/DemoTests.csproj
   last_updated_by: David Lambert
   last_updated_on: 2023-09-29 18:05:28.000000000 Z
 - name: Git
@@ -68,6 +71,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/dlambert-personal/dynamic-validation
   detection_source: Repo Metadata
 - name: NuGet
   description: The package manager for .NET
@@ -77,7 +81,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
-  detection_source: DynamicValidation/Vehicle/Vehicle.csproj
+  detection_source_url: https://github.com/dlambert-personal/dynamic-validation/blob/main/DynamicValidation/DemoTests/DemoTests.csproj
+  detection_source: DynamicValidation/DemoTests/DemoTests.csproj
   last_updated_by: David Lambert
   last_updated_on: 2023-09-29 18:05:28.000000000 Z
 - name: Visual Studio
@@ -89,6 +94,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/dlambert-personal/dynamic-validation/blob/main/DynamicValidation/DynamicValidation.sln
   detection_source: DynamicValidation/DynamicValidation.sln
   last_updated_by: David Lambert
   last_updated_on: 2023-09-29 18:05:28.000000000 Z
@@ -101,7 +107,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/service/9673/default_debf406cb448b8b966a6f0bda56f1617cad2a5dc.png
-  detection_source: DynamicValidation/Vehicle/Vehicle.csproj
+  detection_source_url: https://github.com/dlambert-personal/dynamic-validation/blob/main/DynamicValidation/DemoTests/DemoTests.csproj
+  detection_source: DynamicValidation/DemoTests/DemoTests.csproj
   last_updated_by: David Lambert
   last_updated_on: 2023-09-29 20:55:34.000000000 Z
 - name: MSTest.TestFramework
@@ -114,7 +121,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13142/default_a057bdad489be3cb053d372a68695da4ac94962d.png
-  detection_source_url: DynamicValidation/DemoTests/DemoTests.csproj
+  detection_source_url: https://github.com/dlambert-personal/dynamic-validation/blob/main/DynamicValidation/DemoTests/DemoTests.csproj
   detection_source: DynamicValidation/DemoTests/DemoTests.csproj
   last_updated_by: David Lambert
   last_updated_on: 2023-09-29 18:05:28.000000000 Z
